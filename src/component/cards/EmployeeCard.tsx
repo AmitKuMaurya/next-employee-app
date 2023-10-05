@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "./EmployeeCard.module.scss"
-const EmployeeCard = ({ _id, avatar, email, gender, phone, status, username }: IEmployeee) => {
-  // console.log('avatar: ', avatar.url);
+const EmployeeCard = ({ avatar, email, gender, phone, status, username }: IEmployeee) => {
 
   return (
     

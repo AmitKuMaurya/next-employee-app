@@ -1,19 +1,36 @@
-/* components/Accordion.module.scss */
 .accordion {
   width: 100%;
-  max-width: 1000px; /* Adjust the maximum width as needed */
-  margin: 0 auto;
-}
+  max-width: 1000px;
+  /* Adjust the maximum width as needed */
+  margin: 10% auto;
 
-.tab {
+  .tab {
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    // width: 100%;
     margin: auto;
+
+    .tabContent {
+      padding: 20px;
+      background: #fff;
+
+      .container {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, auto);
+        margin: auto;
+        padding: 10px;
+        align-items: center;
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
 }
 
 .tabButton {
@@ -26,11 +43,6 @@
   width: 100%;
   cursor: pointer;
   user-select: none;
-}
-
-.tabContent {
-  padding: 20px;
-  background: #fff;
 }
 
 .tabButton:hover {
