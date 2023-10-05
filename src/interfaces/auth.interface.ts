@@ -7,4 +7,5 @@ interface IOAuth {
             name : string;
         }
     }
+    status : string
 }

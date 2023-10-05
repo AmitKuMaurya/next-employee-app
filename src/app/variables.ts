@@ -4,3 +4,5 @@ export const GOOGLE_CLIENT_SECRET : string = 'GOCSPX-I6zuzJck88Ey9qKptG1Qqjy91-h
 const NEXTAUTH_SECRET : string = 'NEXTAUTH_SECRET';
 
 export const NEXTAUTH_URL : string = 'http://localhost:3000';
+export const AUTHENTICATED = 'authenticated';
+export const UNAUTHENTICATED = 'unauthenticated';

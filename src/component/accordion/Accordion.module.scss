@@ -37,7 +37,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f0f0f0;
+  background-color: black;
+  color: white;
   border: none;
   padding: 15px 20px;
   width: 100%;
@@ -46,7 +47,7 @@
 }
 
 .tabButton:hover {
-  background: #e0e0e0;
+  background: rgba(0, 0, 0, 0.696);
 }
 
 .active .tabButton {

@@ -14,22 +14,31 @@ const Login = () => {
   return (
     <div>
       {isUserLoggedIn ? (
-        <div className={styles.container} >
-        <p>Plesae SignOut Here.</p>
-     
-        <p>SignOut</p>
-        
-         <button onClick={() => signOut("google")}>Logout</button>
-       
-    </div>
+        <div className={styles.container}>
+          <p>Plesae SignOut Here.</p>
+
+          <p>SignOut</p>
+
+          <button
+            onClick={() => {
+              localStorage.clear();
+              signOut("google");
+            }}
+          >
+            Logout
+          </button>
+        </div>
       ) : (
-        <div className={styles.container} >
-            <p>Please Login To Continue.</p>
-         
-            <p>SignIn</p>
-            
-            <button onClick={() => signIn("google")}> <Image src={GOOGLE_LOGO} height={45} width={45} alt="google_logo" />Login with Google</button>
-           
+        <div className={styles.container}>
+          <p>Please Login To Continue.</p>
+
+          <p>SignIn</p>
+
+          <button onClick={() => signIn("google")}>
+            {" "}
+            <Image src={GOOGLE_LOGO} height={45} width={45} alt="google_logo" />
+            Login with Google
+          </button>
         </div>
       )}
     </div>
