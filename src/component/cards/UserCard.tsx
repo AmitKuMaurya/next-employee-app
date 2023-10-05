@@ -1,9 +1,22 @@
-import React from 'react'
-
+import React from "react";
+import styles from "./Login.module.scss";
 const UserCard = () => {
-  return (
-    <div>UserCard</div>
-  )
-}
+    const loggedInUser = localStorage.getItem("user");
 
-export default UserCard
+    const parsedData: IOAuth | null = JSON.parse(loggedInUser || 'null');
+
+    return (
+        <>
+            <div className={styles.userInfo}>
+                <img src={parsedData?.data.user.image} alt={`${parsedData?.data.user.name} logo`} />
+                <p>Name : {parsedData?.data.user.name}</p>
+            </div>
+            <div className={styles.userDetails}>
+                <p>Email : {`${parsedData?.data.user.email}`}</p>
+                <p>Expiry : {`${parsedData?.data.expires}`}</p>
+            </div>
+        </>
+    );
+};
+
+export default UserCard;

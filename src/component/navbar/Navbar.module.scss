@@ -1,16 +1,13 @@
 /* styles/Navbar.module.scss */
 
-  .body {
-    padding: 0px;
-    margin: 0px;
-  }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #6F61C0;
+    background-color: #a3a7e4;
     color: #fff;
     padding: 1rem 2rem;
+    position: sticky;
   
     .logo p {
       color: #fff;

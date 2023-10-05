@@ -11,6 +11,7 @@ export const Navbar: React.FC = () => {
     };
     return (
         // <div className={styles.navbar}>Navbar</div>
+        <>
         <nav className={styles.navbar}>
             <div className={styles.logo}>
                 <Link href={"/"}>
@@ -21,13 +22,6 @@ export const Navbar: React.FC = () => {
             </div>
             <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
                 <ul>
-                    <li>
-                        <Link href={"/"}>
-                        {/* <p> */}
-                            Home
-                            {/* </p> */}
-                        </Link>
-                    </li>
                     <li>
                         <Link href={"/"}>
                         {/* <p> */}
@@ -43,6 +37,7 @@ export const Navbar: React.FC = () => {
             <div className={styles.bar}></div>
             </div>
         </nav>
+        </>
 
     )
 

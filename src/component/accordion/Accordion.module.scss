@@ -1,0 +1,68 @@
+/* components/Accordion.module.scss */
+.accordion {
+  width: 100%;
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+}
+
+.tab {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    // width: 100%;
+    margin: auto;
+}
+
+.tabButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  border: none;
+  padding: 15px 20px;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tabContent {
+  padding: 20px;
+  background: #fff;
+}
+
+.tabButton:hover {
+  background: #e0e0e0;
+}
+
+.active .tabButton {
+  background: #0070f3;
+  color: #fff;
+}
+
+.opened .tabContent {
+  display: block;
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.closed .tabContent {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.opened .icon {
+  transform: rotate(45deg);
+}
+
+.closed .icon {
+  transform: rotate(0deg);
+}
