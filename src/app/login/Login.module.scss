@@ -1,32 +1,46 @@
-
-
-    .container {
-        width: 100%;
-        max-width: 30vw;
-        height: 30vh;
-        position: relative;
-        border: 1px solid black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin: 10% auto;
-        
-        p {
-            margin: 5% 0 5% 0;
-            text-align: center;            
-        }
-        
-        button {
-            font-size: large;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: auto;
-            border: 0px;
-            border-radius: 37px;
-            padding: 10px 15px;
-            width: 100%;
-            max-width: 50%;
-            align-items: 0 center;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            cursor: pointer;
-        } 
+.container {
+    width: 100%;
+    max-width: 30vw;
+    height: 30vh;
+    position: relative;
+    border: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10% auto;
+    
+    p {
+        margin: 5% 0 5% 0;
+        text-align: center;            
     }
+    
+    button {
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: auto;
+        border: 0px;
+        border-radius: 37px;
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 50%;
+        align-items: 0 center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+    } 
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90vw;
+    }
+
+    .container p {
+        margin: 3% 0 3% 0;
+    }
+
+    .container button {
+        max-width: 70%;
+    }
+}

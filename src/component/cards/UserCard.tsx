@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./Login.module.scss";
+import styles from "./UserCard.module.scss";
 const UserCard = () => {
     const loggedInUser = localStorage.getItem("user");
 
     const parsedData: IOAuth | null = JSON.parse(loggedInUser || 'null');
-    console.log('parsedData: ', parsedData?.status);
 
     return (
         <>

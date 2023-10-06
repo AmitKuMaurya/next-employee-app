@@ -1,5 +1,5 @@
 import NextAuth from "next-auth/next";
-import GoogleProvider from "next-auth/providers/google"
+import GoogleProvider from "next-auth/providers/google";
 import { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } from "../../../variables.ts";
 
 const handler = NextAuth({

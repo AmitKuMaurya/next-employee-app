@@ -18,8 +18,6 @@ const Accordion: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { lists, loading } = useSelector((state: RootState) => state.employees);
 
-  console.log("loading: ", loading);
-  console.log("lists: ", lists);
   useEffect(() => {
     dispatch(fetchEmployee());
   }, []);
@@ -34,7 +32,7 @@ const Accordion: React.FC = () => {
           A 3d Chart Of Employees.
         </button>
         {activeTab === 0 && (
-          <div className={styles.tabContent}>Content for Tab 1</div>
+          <div className={styles.tabContent}>No, 3d chart as of now.</div>
         )}
       </div>
       <div className={styles.tab}>

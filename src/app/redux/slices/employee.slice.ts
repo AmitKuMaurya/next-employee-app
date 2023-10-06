@@ -3,10 +3,8 @@ import axios from "axios";
 
 export const fetchEmployee = createAsyncThunk('employee/getAll', async (api)=>{
     const {data} = await axios.get(`https://employee-management-api-o905.onrender.com/api/employee`);
-    // const data = await response.json();
-    console.log('data: ', data);
+
     return data;
-    // console.log('response: ', response);
 })
 
 
